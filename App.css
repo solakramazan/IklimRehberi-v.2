@@ -1,0 +1,67 @@
+.weather-app {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Maksimum genişlik */
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Arama kutusu ve buton arası boşluk */
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; /* Mavi renk */
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Hava durumu bilgisinin gösterileceği kart */
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.weather-info h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.weather-info p {
+  margin: 5px 0 0;
+  text-transform: capitalize; /* Gelen açıklamayı büyük harfle başlatır */
+  color: #666;
+}
+
+.error-message {
+  color: #d9534f; /* Kırmızı renk */
+  margin-top: 20px;
+}
