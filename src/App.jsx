@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-// 1. API anahtarımızı ve temel URL'yi bir değişken olarak tanımlayalım.
-const apiKey = '04f038dd451c170018192a4f6fcd3057'; // ÖNEMLİ!
+const apiKey = '04f038dd451c170018192a4f6fcd3057';  // OpenWeatherMap API anahtarınız
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
     setCity(event.target.value);
   };
 
-  // 2. Arama fonksiyonunu async olarak güncelledik.
+  // 2. Arama fonksiyonunu async olarak güncelledim.
   const handleSearch = async () => {
     if (!city) {
       // Eğer arama kutusu boşsa hata ver.
